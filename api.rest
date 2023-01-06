@@ -1,0 +1,21 @@
+GET HTTP://localhost:5000/v1/api/product
+###
+GET HTTP://localhost:5000/v1/api/product/63b814975e1c0e93b5c8ac2c
+###
+POST HTTP://localhost:5000/v1/api/product
+Content-Type: application/json
+
+{
+    "name":"Mie Sedap",
+    "price": 2000,
+    "description": "Mie Murah"
+}
+###
+PUT HTTP://localhost:5000/v1/api/product/63b81c2742e333764ff0882d
+Content-Type: application/json
+
+{
+    "name": "Mie Sedap Goreng"
+}
+###
+DELETE HTTP://localhost:5000/v1/api/product/63b814975e1c0e93b5c8ac2c
